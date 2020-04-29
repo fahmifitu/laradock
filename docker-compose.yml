@@ -305,6 +305,7 @@ services:
 
 ### NGINX Server #########################################
     nginx:
+      restart: always
       build:
         context: ./nginx
         args:
@@ -391,6 +392,7 @@ services:
 
 ### MySQL ################################################
     mysql:
+      restart: always
       build:
         context: ./mysql
         args:
